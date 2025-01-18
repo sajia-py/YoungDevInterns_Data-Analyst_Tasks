@@ -1,68 +1,64 @@
-# YoungDevInterns_Data-Analyst_Tasks
-# Interactive Dashboard Project  
+# **Business Performance Analysis - 2011**
 
-## Task: Develop Dashboards Using Power BI  
+## **Overview**
+This analysis addresses four key questions from the CEO and CMO, focusing on revenue trends, customer insights, and geographic sales performance. The dataset was thoroughly prepared and analyzed to ensure accurate, actionable insights.
 
-### Overview  
-This project involves creating interactive dashboards using **Power BI** to visualize and explore insights from a dataset. The dashboards are designed to be user-friendly, visually appealing, and provide actionable insights through dynamic and interactive visualizations.  
+---
 
-### Tools Used  
-- **Power BI Desktop**: For creating and designing the dashboard.  
-- **Power BI Service**: For publishing and sharing the dashboard online.  
+## **Process**
+### **1. Data Loading**
+- Imported the dataset into the analysis tool.
+- Ensured correct formatting of critical fields: Invoice Date, Quantity, Unit Price, and Customer ID.
 
-### Features of the Dashboard  
-- **Interactive Filters and Slicers**: Allows users to filter data by categories such as date, region, or product.  
-- **Dynamic Visualizations**: Includes bar charts, line graphs, pie charts, and other visuals that update interactively.  
-- **KPIs and Insights**: Key metrics are displayed for quick decision-making.  
-- **User-Friendly Layout**: An intuitive design that emphasizes data storytelling.  
+### **2. Data Cleaning**
+- Removed invalid or missing data, including:
+  - Records with missing Customer IDs.
+  - Entries with negative quantities.
+- Ensured data accuracy for meaningful insights.
 
-### Steps to Complete the Task  
+### **3. Data Preparation**
+- Created a **Revenue** field by multiplying `Quantity` by `Unit Price`.
+- Grouped data by relevant dimensions:
+  - Monthly aggregation for trends.
+  - Country-level grouping for regional analysis.
+  - Customer-specific filtering for top customer insights.
+- Applied filters to exclude unwanted data, such as the United Kingdom and missing values.
 
-1. **Dataset Selection and Preparation**:  
-   - Choose a dataset relevant to your project objective (e.g., sales, marketing, or operations data).  
-   - Clean and preprocess the dataset in Excel or other tools to ensure it's ready for analysis.  
+---
 
-2. **Connect to Dataset**:  
-   - Open Power BI Desktop and connect to the dataset using built-in connectors (e.g., Excel, CSV, or SQL Server).  
-   - Load and model the data as needed to establish relationships between tables.  
+## **Findings**
+### **1. Monthly Revenue Trends in 2011**
+- **Visual:** Line Chart
+- **Insights:**
+  - Clear monthly revenue trends with peaks during November.
+  - Insights guide strategic planning and revenue forecasting.
 
-3. **Design the Dashboard**:  
-   - Create individual visuals (e.g., bar charts, line charts, tables).  
-   - Use slicers and filters to enable interactivity.  
-   - Add calculated columns, measures, or DAX functions for deeper insights.  
-   - Arrange visuals into an intuitive layout for storytelling.  
+### **2. Revenue and Quantity by Country**
+- **Visual:** Side-by-Side Bar Chart
+- **Insights:**
+  - Top 10 countries (excluding the UK) analyzed for revenue and quantity.
+  - United Kingdom identified as top contributors, offering opportunities for targeted campaigns.
 
-4. **Publish and Share**:  
-   - Save the Power BI report as a `.pbix` file.  
-   - Publish the report to the Power BI Service.  
-   - Share the dashboard link or embed it in web applications (if applicable).  
+### **3. Top 10 Customers by Revenue**
+- **Visual:** Vertical Bar Chart
+- **Insights:**
+  - Top 10 customers identified and sorted by descending revenue.
+  - Customer ID 14646 highlighted as the largest contributor, with opportunities for loyalty programs and upselling.
 
-### Key Deliverables  
-- **Power BI Dashboard**: A `.pbix` file containing the interactive dashboard.  
-- **Documentation**: A brief description of the dashboard's features and how to use it.  
+### **4. Global Sales Distribution**
+- **Visual:** Map Chart
+- **Insights:**
+  - Total units sold visualized globally, excluding the UK.
+  - Key markets identified in France, while Germany suggests room for growth.
 
-### Usage Instructions  
+---
 
-1. **Opening the Dashboard**:  
-   - Download the `.pbix` file and open it in Power BI Desktop.  
-   - Alternatively, access the dashboard via the shared Power BI Service link.  
+## **Recommendations**
+- **Focus Marketing Efforts:** Prioritize high-performing countries and strategize expansion in underperforming regions.
+- **Customer Retention:** Develop loyalty programs for top customers to drive repeat business.
+- **Geographic Expansion:** Explore new campaigns in regions with potential for growth.
 
-2. **Exploring the Dashboard**:  
-   - Use slicers and filters to interact with the data.  
-   - Hover over visuals for detailed tooltips.  
+---
 
-3. **Customizing the Dashboard**:  
-   - Modify or add visuals in Power BI Desktop to suit your needs.  
-
-### Example Insights (Add Specifics After Creation)  
-- **Sales by Region**: Analyze which regions contribute the most to overall revenue.  
-- **Customer Trends**: Understand customer behavior based on purchase history.  
-- **Profit Margins**: Identify areas with high or low profitability.  
-
-### Future Work  
-- Integrate real-time data sources for live dashboards.  
-- Add predictive analytics using advanced DAX functions.  
-- Expand visualizations with Power BI custom visuals from the marketplace.  
-
-### Author  
-[Sajia Ashfaq](mailto:sajiaashfaq@gmail.com)  
+## **Conclusion**
+This analysis provides a comprehensive view of business performance in 2011, highlighting key trends and actionable insights. By implementing the recommendations, the company can optimize its strategies for growth and customer retention.
